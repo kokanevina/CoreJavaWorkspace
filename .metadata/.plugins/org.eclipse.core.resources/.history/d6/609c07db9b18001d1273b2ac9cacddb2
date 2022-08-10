@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+import staticdemo.NeoEmployee;
+
+public class StaticDemo {
+	public static void main(String[] args) {
+		System.out.println(NeoEmployee.companyName);
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter companyName");
+		NeoEmployee.companyName=sc.nextLine();
+		System.out.println(NeoEmployee.companyName);
+		System.out.println("Enter id:");
+		int id=sc.nextInt();
+		
+	}
+}

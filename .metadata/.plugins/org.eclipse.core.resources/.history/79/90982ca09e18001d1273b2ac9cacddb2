@@ -1,0 +1,34 @@
+package staticdemo;
+
+public class NeoEmployee {
+	/*shared data, loaded at the time of class loading before object creation
+	 *single copy, access via class name*/
+	public int empId;
+	public String empName;
+	public double basicSalary;
+	public static String companyName;
+	/*used to initialize static variables, loaded automatically at the time of classloading*/
+	/*block loading done in multithreading environment*/
+	static {
+		System.out.println("static block executed");
+		companyName="Neosoft";
+	}
+	static {
+		System.err.println("static block 2 executed");
+		
+	}
+	public NeoEmployee(int empId, String empName, double basicSalary) {
+
+		System.out.println("constructor executed");
+		this.empId = empId;
+		this.empName = empName;
+		this.basicSalary = basicSalary;
+	}
+	@Override
+	public String toString() {
+		return "NeoEmployee [empId=" + empId + ", empName=" + empName + ", basicSalary=" + basicSalary + "]";
+	}
+	
+	
+	
+}

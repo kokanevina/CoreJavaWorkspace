@@ -1,0 +1,24 @@
+package staticdemo;
+
+public class NeoEmployee {
+	/*shared data, loaded at the time of class loading before object creation
+	 *single copy, access via class name*/
+	public int empId;
+	public String empName;
+	public double basicSalary;
+	public static String companyName;
+	/*used to initialize static variables, loaded automatically at the time of classloading*/
+	static {
+		System.out.println("static block executed");
+		companyName="Neosoft Technologies Ltd.";
+	}
+	public NeoEmployee(int empId, String empName, double basicSalary) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.basicSalary = basicSalary;
+	}
+	
+	
+	
+}
