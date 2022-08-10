@@ -14,7 +14,7 @@ public class NeoEmployee {
 		companyName="Neosoft";
 	}
 	static {
-		System.err.println("static block 2 executed");
+		System.out.println("static block 2 executed");
 	}
 	public NeoEmployee(int empId, String empName, double basicSalary) {
 
@@ -38,4 +38,6 @@ public class NeoEmployee {
 	public void test() {
 		System.out.println(companyName);
 	}
+	
+	
 }

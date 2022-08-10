@@ -5,7 +5,7 @@ public class NeoEmployee {
 	private String empName;
 	private double basicSalary;
 	public  static String companyName;
-	public static int count; 
+	public static int COUNT; 
 	static {
 		System.out.println("static block executed");
 		companyName="Neosoft";
@@ -15,7 +15,7 @@ public class NeoEmployee {
 		this.empId = empId;
 		this.empName = empName;
 		this.basicSalary = basicSalary;
-		count++;
+		COUNT++;
 	}
 	@Override
 	public String toString() {
@@ -28,4 +28,21 @@ public class NeoEmployee {
 	public void test() {
 		System.out.println(companyName);
 	}
+	
+	public void display() {
+		System.out.println("Id :"+empId);
+		System.out.println("Name :"+empName);
+		System.out.println("Salary :"+basicSalary);
+		System.out.println("Company Name:"+companyName);
+		System.out.println("Count:"+COUNT);
+	}
+	public static void display(NeoEmployee emp) {
+		// can not access instance members directly
+		System.out.println("Id :"+emp.empId);
+		System.out.println("Name :"+emp.empName);
+		System.out.println("Salary :"+emp.basicSalary);
+		System.out.println("Company Name:"+companyName);
+		System.out.println("Count:"+COUNT);
+	}
+	
 }
