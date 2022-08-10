@@ -1,0 +1,4 @@
+Create CoderStudent class with instance variables : studId, studName, courseName.
+Implement code using static variable such that studId should be autoincremented from initial value "CS-1"
+Means next student should have studId "CS-2". 
+Note: Do not declare studId as static . it should be instance variable only. 
