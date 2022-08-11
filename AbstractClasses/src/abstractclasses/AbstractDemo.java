@@ -1,5 +1,6 @@
 package abstractclasses;
 
+
 public class AbstractDemo {
 	public static void main(String[] args) {
 		//Circle c=new Circle(); // can not create object of partially implemented classes(abstract classes)
@@ -25,5 +26,7 @@ public class AbstractDemo {
 		double prc=c.perimeter();
 		System.out.println(arc);
 		System.out.println(prc);
+		
+	
 	}
 }
