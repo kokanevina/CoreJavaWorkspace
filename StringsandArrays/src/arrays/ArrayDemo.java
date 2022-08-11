@@ -43,9 +43,10 @@ public class ArrayDemo {
         	System.out.println(bk); // toString 
         }
         
-        // Array API
-        
-        
+      String joined1=String.join("-", "India","is","My","Country" );
+      String joined2=String.join("$", cities);
+      System.out.println(joined1);
+      System.out.println(joined2);
 	}
 
 }
