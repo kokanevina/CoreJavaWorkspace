@@ -1,8 +1,0 @@
-package staticdemo;
-
-public class NeoStudent {
-	/*shared data, loaded at the time of class loading before object creation
-	 *single copy, access via class name*/
-	
-	
-}
