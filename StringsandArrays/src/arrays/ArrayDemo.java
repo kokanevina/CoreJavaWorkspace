@@ -42,6 +42,10 @@ public class ArrayDemo {
         for(Book bk:bookArray) {
         	System.out.println(bk); // toString 
         }
+        
+        // Array API
+        
+        
 	}
 
 }
