@@ -1,0 +1,6 @@
+Write the difference between
+
+1. instance variable and static variables(class variable)
+2. abstract classes and interfaces
+
+Implement any code to call static and non static methods from same class and different class

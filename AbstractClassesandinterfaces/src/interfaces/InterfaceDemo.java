@@ -16,7 +16,6 @@ public class InterfaceDemo {
 			
 			/*interface object never gets created, we can create reference variable*/
 			ShapeIntf shape;
-			
 			shape=new MyCircle(3);
 			double ac=shape.area();
 			double pc=shape.perimeter();
