@@ -34,6 +34,7 @@ public class StringDemo {
 		String s=" ";
 		System.out.println(s.isEmpty());
 		System.out.println(s.isBlank());
+		
 		System.out.println("-------String comparision-----");
 		
 		String country1="inDIA";
