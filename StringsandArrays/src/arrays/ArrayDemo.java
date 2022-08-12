@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayDemo {
@@ -47,6 +48,13 @@ public class ArrayDemo {
       String joined2=String.join("$", cities);
       System.out.println(joined1);
       System.out.println(joined2);
+  	 int index=Arrays.binarySearch(cities, "mumbai");
+  	 System.out.println(index);
+  	 Arrays.sort(cities);
+  	 for(String city:cities)
+  		 System.out.println(city);
 	}
 
+
+	
 }

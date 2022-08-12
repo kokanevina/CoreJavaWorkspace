@@ -2,12 +2,25 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="hasa.Address"/>
     <fullyQualifiedTypeName name="hasa.Employee"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="staticdemo.NeoEmployee"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Flow.Publisher"/>
     <fullyQualifiedTypeName name="staticdemo2.NeoEmployee"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="abstractclasses.Circle"/>
+    <fullyQualifiedTypeName name="abstractclasses.SemiCircle"/>
+    <fullyQualifiedTypeName name="abstractclasses.FullCircle"/>
+    <fullyQualifiedTypeName name="interfaces.MyCircle"/>
+    <fullyQualifiedTypeName name="interfaces.SemiCircle"/>
+    <fullyQualifiedTypeName name="interfaces.Square"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
+    <fullyQualifiedTypeName name="interfaces.ShapeIntf"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="arrays.Book"/>
 </qualifiedTypeNameHistroy>
