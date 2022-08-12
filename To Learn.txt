@@ -1,0 +1,2 @@
+Check Hirarchy of Exception class. 
+try with try finally without catch and see the result
