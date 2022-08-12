@@ -19,6 +19,9 @@ public static void main(String[] args) throws IOException {
 		ch=sc.nextInt();
 		switch (ch) {
 		case 1:
+			if(BookCRUD.i==size)
+				System.out.println("Cant add Book. Array full");
+		else {
 			System.out.println("Enter Book Id");
 			int id=sc.nextInt();
 			System.out.println("Enter Book Name");
@@ -31,6 +34,7 @@ public static void main(String[] args) throws IOException {
 				System.out.println("Book Added successfully...");
 			else
 				System.out.println("Book insertion failed...");
+		}
 			break;
 		case 2:
 			System.out.println("Enter exisiting id of book which you want to update");
@@ -41,9 +45,11 @@ public static void main(String[] args) throws IOException {
 				 int ch1=sc.nextInt();
 				 switch (ch1) {
 				case 1:
-					System.out.println("Enter new name");
-					 name=br.readLine();
-					 searchedBook.setBookName(name);
+					
+						System.out.println("Enter new name");
+						 name=br.readLine();
+						 searchedBook.setBookName(name);
+					
 					 /*Array not yet updated*/
 					break;
 				case 2:
@@ -62,18 +68,25 @@ public static void main(String[] args) throws IOException {
 					 /*Array not yet updated*/
 				default: System.out.println("Wrong choice");
 					break;
-				}// end swtich case
+				}// end switch case
 				boolean update= crud.updateBook(searchedBook);
 				if(update)
 					System.out.println("Book updated Successfully..");
 				else
-					System.out.println("BookUpdation failed...");
+					System.out.println("Book Updation failed...");
 			 }// if ended
 			 else {
 				 System.out.println("Book not found to update");
 			 }
 			break;
 		case 3:
+			System.out.println("Enter existing id to delete the book");
+			id=sc.nextInt();
+			boolean delete=crud.deleteBook(id);
+			if(delete)
+				System.out.println("Book deleted Successfully..");
+			else
+				System.out.println("Book Deletion failed...");
 			break;
 		case 4:
 			System.out.println("Enter id to search book");

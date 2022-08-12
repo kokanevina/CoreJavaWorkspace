@@ -31,7 +31,7 @@ public class BookCRUD{
 		Book searchedBook=null;
 		for(int j=0;j<i;j++) {
 			Book bk=bookArray[j];
-			if(bk.getBookId()==bookId) {
+			if(bk!=null && bk.getBookId()==bookId) {
 				searchedBook=bk;
 				break;
 			}
@@ -42,7 +42,8 @@ public class BookCRUD{
 	public boolean updateBook(Book updatedbook) {
 		boolean replaced= false;
 		for(int j=0;j<i;j++) {
-			if(bookArray[j].getBookId()==updatedbook.getBookId()) {
+			Book bk=bookArray[j];
+			if(bk!=null && bk.getBookId()==updatedbook.getBookId()) {
 				bookArray[j]=updatedbook;
 				replaced=true;
 				break;
@@ -50,5 +51,15 @@ public class BookCRUD{
 		}
 		return replaced;
 	}
-	
+	public boolean deleteBook(int bookId) {
+		boolean deleted=false;
+		for(int j=0;j<i;j++) {
+			Book bk=bookArray[j];
+			if(bk!=null && bk.getBookId()==bookId) {
+				bookArray[j]=null;
+				deleted=true;
+			}
+		}// ended
+		return deleted;
+	}
 }
