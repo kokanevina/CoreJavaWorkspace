@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class CRUDDemo {
+public class CRUDDemo  {
 public static void main(String[] args) throws IOException {
 	Scanner sc=new Scanner(System.in);
 	System.out.println("Enter size of array:");
@@ -27,7 +27,7 @@ public static void main(String[] args) throws IOException {
 				System.out.println("Cant add Book. Array full");
 		else {
 			System.out.println("Enter Book Id");
-			 id=sc.nextInt();
+			id=sc.nextInt();
 			System.out.println("Enter Book Name");
 			 name=br.readLine();
 			System.out.println("Enter Book Price");
