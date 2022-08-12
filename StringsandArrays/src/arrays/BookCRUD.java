@@ -16,6 +16,7 @@ public class BookCRUD{
 		 if(book!=null) {
 				bookArray[i]=book;
 				i++;
+				System.out.println("book added till previous index of: "+i);
 				return true;
 		 }
 		 else
@@ -28,7 +29,8 @@ public class BookCRUD{
 	
 	public Book searchBook(int bookId) {
 		Book searchedBook=null;
-		for(Book bk:bookArray) {
+		for(int j=0;j<i;j++) {
+			Book bk=bookArray[j];
 			if(bk.getBookId()==bookId) {
 				searchedBook=bk;
 				break;

@@ -51,6 +51,7 @@ public static void main(String[] args) throws IOException {
 					 price=sc.nextDouble();
 					 searchedBook.setBookPrice(price);
 					 /*Array not yet updated*/
+						break;
 				case 3:
 					System.out.println("Enter new name");
 					 name=br.readLine();
@@ -59,9 +60,14 @@ public static void main(String[] args) throws IOException {
 					 searchedBook.setBookName(name);
 					 searchedBook.setBookPrice(price);
 					 /*Array not yet updated*/
-				default:
+				default: System.out.println("Wrong choice");
 					break;
-				}
+				}// end swtich case
+				boolean update= crud.updateBoot(searchedBook);
+				if(update)
+					System.out.println("Book updated Successfully..");
+				else
+					System.out.println("BookUpdation failed...");
 			 }// if ended
 			 else {
 				 System.out.println("Book not found to update");
