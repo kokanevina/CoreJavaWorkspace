@@ -14,6 +14,10 @@ public static void main(String[] args) throws IOException {
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	
 	int ch=0;
+	int id=0;
+	String name="";
+	double price=0;
+	
 	do {
 		System.out.println("1: ADD BOOK \n 2:UPDATE BOOK \n3: DELETE BOOK\n 4: SEARCH BOOK\n 5: DISPLAY BOOKS\n 6:BACK");
 		ch=sc.nextInt();
@@ -23,11 +27,11 @@ public static void main(String[] args) throws IOException {
 				System.out.println("Cant add Book. Array full");
 		else {
 			System.out.println("Enter Book Id");
-			int id=sc.nextInt();
+			 id=sc.nextInt();
 			System.out.println("Enter Book Name");
-			String name=br.readLine();
+			 name=br.readLine();
 			System.out.println("Enter Book Price");
-			double price=sc.nextDouble();
+			 price=sc.nextDouble();
 			Book book=new Book(id,name,price); // Book Object created
 			boolean b=crud.addBook(book);
 			if(b)
