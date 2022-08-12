@@ -1,5 +1,5 @@
 package arrays;
-
+/*Data carrier : Plain Old Java Object : POJO*/
 public class Book {
 		private int bookId;
 		private String bookName;

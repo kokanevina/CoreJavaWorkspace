@@ -6,26 +6,8 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class CRUDDemo {
-	Book bookArray[]=new Book[5];
-	public static int i=0;
-	
-	public boolean addBook(Book book) {
-		 if(book!=null) {
-				bookArray[i]=book;
-				i++;
-				return true;
-		 }
-		 else
-			 return false;
-	}
-	public void display() {
-		for(Book bk: bookArray) {
-			System.out.println(bk);
-		}
-	}
-	
 public static void main(String[] args) throws IOException {
-	CRUDDemo crud=new CRUDDemo();
+	BookCRUD crud=new BookCRUD();
 	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 	Scanner sc=new Scanner(System.in);
 	int ch=0;
@@ -52,6 +34,13 @@ public static void main(String[] args) throws IOException {
 		case 3:
 			break;
 		case 4:
+			System.out.println("Enter id to search book");
+			 id=sc.nextInt();
+			 Book searchedBook=crud.searchBook(id);
+			 if(searchedBook!=null)
+				 System.out.println(searchedBook);
+			 else
+				 System.out.println("Book Not Found");
 			break;
 		case 5:
 			crud.display();
@@ -62,5 +51,10 @@ public static void main(String[] args) throws IOException {
 			break;
 	}
 	}while(ch!=6);
+	
+
 }
+
+
+
 }
