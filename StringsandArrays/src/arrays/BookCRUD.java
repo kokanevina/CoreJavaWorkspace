@@ -39,7 +39,7 @@ public class BookCRUD{
 		return searchedBook;  // null will returned if no book found
 	}
 	
-	public boolean updateBoot(Book updatedbook) {
+	public boolean updateBook(Book updatedbook) {
 		boolean replaced= false;
 		for(int j=0;j<i;j++) {
 			if(bookArray[j].getBookId()==updatedbook.getBookId()) {

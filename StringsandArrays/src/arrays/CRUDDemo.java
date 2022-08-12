@@ -63,7 +63,7 @@ public static void main(String[] args) throws IOException {
 				default: System.out.println("Wrong choice");
 					break;
 				}// end swtich case
-				boolean update= crud.updateBoot(searchedBook);
+				boolean update= crud.updateBook(searchedBook);
 				if(update)
 					System.out.println("Book updated Successfully..");
 				else
