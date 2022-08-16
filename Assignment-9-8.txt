@@ -1,0 +1,1 @@
+Create any other Inheritance of your choice and show the demo of method overrding and upcasting in that
