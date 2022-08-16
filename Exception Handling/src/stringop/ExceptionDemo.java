@@ -31,9 +31,9 @@ public class ExceptionDemo {
 				try {
 					System.out.println("---------inner try started------------");
 				System.out.println("Enter source index and destination index");
-				int si=sc.nextInt();
+				int si=sc.nextInt(); 
 				int di=sc.nextInt();
-				String subs=india.substring(si, di);
+				String subs=india.substring(si, di);  
 				System.out.println(subs);
 				System.out.println("---------inner  try ended------------");
 				}
