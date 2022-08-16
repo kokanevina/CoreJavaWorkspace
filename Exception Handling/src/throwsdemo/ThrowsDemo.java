@@ -18,7 +18,7 @@ public class ThrowsDemo {
     	    }
     	    catch (ArithmeticException ae) {
     	    	System.out.println("callee's exception handled in caller");
-			ae.printStackTrace();
+			System.out.println(ae);
 			}
     	    System.out.println("input popped from stack");
     }
