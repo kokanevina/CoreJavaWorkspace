@@ -18,9 +18,8 @@ public class MathOperation {
 		double div=0;
 		try {
 		div= a/b;     // ArithmeticException object
-		double result=div+7;
+		double result=div+7; // extra coding that gets skipped if exp occurs above
 		System.out.println("this stmt gets skipped if exception occurs above");
-		
 		}
 		catch(ArrayIndexOutOfBoundsException ae) {
 			System.out.println("Exception occured");
