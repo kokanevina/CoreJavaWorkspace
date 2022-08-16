@@ -1,4 +1,4 @@
-package stringop;
+package nestedtry;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -41,12 +41,6 @@ public class ExceptionDemo {
 				System.out.println(e); // details are not getting displayed
 				e.printStackTrace(); // all details : callee name line number, caller name line number // thread works here
 				}
-				catch (StringIndexOutOfBoundsException e) {
-					System.out.println(e);
-				}
-				catch (Exception e) {
-					System.out.println(e);
-				}
 				finally {
 					System.out.println("inner finally");
 				}
@@ -66,6 +60,10 @@ public class ExceptionDemo {
 			}// switch ended
 			 System.out.println("---------outer try ended------------");
 		}// try ended
+		catch (StringIndexOutOfBoundsException e) {
+			System.out.println("in outer catch");
+			System.out.println(e);
+		}
 		catch (Exception e) {
 		System.out.println("in outer catch");
 		System.out.println(e);
