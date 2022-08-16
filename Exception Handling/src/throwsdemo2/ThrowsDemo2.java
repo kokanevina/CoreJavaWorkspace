@@ -12,8 +12,7 @@ public class ThrowsDemo2 {
     public void input()throws ArithmeticException,NumberFormatException,IOException {
     		System.out.println("input pushed on stack");
     	   BufferedReader br =new  BufferedReader(new InputStreamReader(System.in));
-    	    System.out.println("Enter 2 nums for division");
-    	    
+    	    System.out.println("Enter 2 nums for division");    
     	    int no1=Integer.parseInt(br.readLine()); // checked exception
     	    int no2=Integer.parseInt(br.readLine());
     	    op.divide(no1, no2); // call should be surrounded with try catch
