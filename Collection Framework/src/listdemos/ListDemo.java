@@ -57,5 +57,19 @@ public class ListDemo {
 		
 		/*Implement Linked List of collection of salaries (Double)*/
 		/*add, get, set , remove,isEmpty, contains, indexOf, size*/
+		
+		// normal for
+		for(int i=0;i<myList3.size();i++) {
+			String name=myList3.get(i);
+			System.out.println(name);
+		}
+		// enhanced for
+	for(String name:myList3)
+	{
+		System.out.println(name);
+	}
+		//iterator
+		
+		//listiterator
 	}
 }
