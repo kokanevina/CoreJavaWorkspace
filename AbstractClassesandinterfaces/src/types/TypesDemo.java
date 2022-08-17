@@ -116,5 +116,7 @@ class N extends Outer1 implements Outer1.Inner1{
 }
 
 public class TypesDemo {
-
+public static void main(String[] args) {
+	
+}
 }
