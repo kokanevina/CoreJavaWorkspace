@@ -28,6 +28,9 @@ public class ListDemo {
 		myList2.add(434);
 		myList2.add(123);  // duplicate allowed
 		myList2.add(234);
+		myList2.add(123);
+		myList2.add(123);
+		
 		myList2.add(523);
 		System.out.println(myList2);  
 		System.out.println(myList2.get(1));  // indexed collection
@@ -127,5 +130,31 @@ public class ListDemo {
 	    	 Integer ele=listitr.previous();
 	    	 System.out.println(ele+"   =>>  "+index);
 	     }
+	     
+	     listitr=myList2.listIterator();
+	     System.out.println("Forward Traversing");
+	     while(listitr.hasNext()) {
+	    	 int index=listitr.nextIndex();
+	    	 if(index==3)
+	    		 	listitr.add(8888);
+	    	 
+//	    	 if(index==1)
+//	    		 listitr.set(7676);
+	    	 listitr.next();
+	     }
+	     System.out.println(myList2);
+	     //setting new element at index 1
+	     listitr=myList2.listIterator();
+	     System.out.println("Forward Traversing");
+	     while(listitr.hasNext()) {
+	    	 int index=listitr.nextIndex();
+	    	 System.out.println(index);
+	    	 if(index==2)
+	    		 listitr.set(7676); // set to current
+	    	 myList2.set(0, 8989); // allowed
+	    	 listitr.next();
+	     }
+	     System.out.println(myList2);
 	}
 }
+
