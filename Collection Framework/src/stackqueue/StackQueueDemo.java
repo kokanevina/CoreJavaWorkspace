@@ -1,8 +1,10 @@
 package stackqueue;
 
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -41,14 +43,16 @@ public class StackQueueDemo {
 		// make a switch case 1: pop 2: push 3: display
 		// use separate try catch in every case
 		
+		System.err.println("........QUEUE...........");
 		
 		Queue<Integer> myQueue=new LinkedList<>() ;
-		 myQueue.add(12);
+		  myQueue.add(120); 
+		myQueue.add(12);
 		  myQueue.add(12); 
 		  myQueue.add(13); 
 		  myQueue.add(112); 
 		  myQueue.add(123);
-		 
+		  myQueue.add(121); 
 		System.out.println(myQueue);
 		int removed=myQueue.remove(); // gives exception of queue is empty
 		System.out.println("Removed: "+removed);
@@ -66,8 +70,8 @@ public class StackQueueDemo {
 
 		//System.out.println(myQueue.remove()); //gives exception of queue is empty
 		 System.out.println(myQueue.poll());  // returns null if queue is empty
-		 
-		 Deque<Integer> myDq=new LinkedList<>();
+		 System.err.println("..............DEQUE.........");
+		 Deque<Integer> myDq=new LinkedList<>(); // or ArrayDeque
 		 myDq.add(12);
 		 myDq.add(12); 
 		 myDq.add(13); 
