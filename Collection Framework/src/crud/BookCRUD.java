@@ -6,8 +6,6 @@ import java.util.List;
 /*DAO : Data Access Object : It works on POJO*/
 public class BookCRUD{
 	List<Book> bookList;
-	public static int i=0;
-	
 	public BookCRUD() {
 		bookList=new ArrayList<>();
 	}
@@ -23,26 +21,21 @@ public class BookCRUD{
 		for(Book bk: bookList) 
 			System.out.println(bk);
 	}
-	
 	public Book searchBook(int bookId) {
 		Book searchedBook=null;
-		for(int j=0;j<i;j++) {
+		for(int j=0;j<bookList.size();j++) {
 			Book bk=bookList.get(j);
 			if(bk.getBookId()==bookId) {
+				System.out.println("in if");
 				searchedBook=bk;
 				break;
 			}
 		}// ended
 		return searchedBook;  // null will returned if no book found
 	}
-	
-	
-	
-	
-	
 	public boolean updateBook(Book updatedbook) {
 		boolean replaced= false;
-		for(int j=0;j<i;j++) {
+		for(int j=0;j<bookList.size();j++) {
 			Book bk=bookList.get(j);
 			if(bk.getBookId()==updatedbook.getBookId()) {
 				bookList.set(j, updatedbook);
@@ -54,7 +47,7 @@ public class BookCRUD{
 	}
 	public boolean deleteBook(int bookId) {
 		boolean deleted=false;
-		for(int j=0;j<i;j++) {
+		for(int j=0;j<bookList.size();j++) {
 			Book bk=bookList.get(j);
 			if(bk.getBookId()==bookId) {
 				bookList.remove(j);
