@@ -113,11 +113,20 @@ public static void main(String[] args) {
 	
 	System.out.println("Application ended");
 	
-	
-	
+
 	
 	/*45 <->23 , "hi" <-> "hello"   (2,"java",600) <-> (1,"php",500)*/
 	/*custom sorting : Comparator interfaces,  util, compare (2 objects to compare)
 	 * sorting on only one property : Comparable  interface (lang ), compareTo(Object to compare)*/
+/*
+Comparable                                                             Comparator
+sorting on basis of single property                    custom sorting
+implement in same class                                       implemented in new diff classes
+compareTo method used for comparision			compare method used for comparision
+single parameter method										 method has 2 parameters
+found in lang package 											found in util package
+
+sort with one paramater needed							sort with 2 parameters needed
+*/
 }
 }
