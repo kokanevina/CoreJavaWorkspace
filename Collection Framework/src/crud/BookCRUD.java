@@ -21,6 +21,10 @@ public class BookCRUD{
 		for(Book bk: bookList) 
 			System.out.println(bk);
 	}
+	
+	public void sortBooks() {
+		// put a logic of sorting
+	}
 	public Book searchBook(int bookId) {
 		Book searchedBook=null;
 		for(int j=0;j<bookList.size();j++) {

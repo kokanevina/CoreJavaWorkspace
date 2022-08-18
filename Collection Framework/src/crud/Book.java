@@ -1,6 +1,6 @@
 package crud;
 
-public class Book {
+public class Book  implements Comparable<Book>{
 	private int bookId;
 	private String bookName;
 	private double bookPrice;
@@ -32,4 +32,12 @@ public class Book {
 	public String toString() {
 		return "Book [bookId=" + bookId + ", bookName=" + bookName + ", bookPrice=" + bookPrice + "]";
 	}
+	@Override
+	public int compareTo(Book book) {
+		// this : book 1, book : book 2
+		System.out.println("function called");
+		int diff=this.bookId-book.bookId;
+		return diff;
+	}
+	
 }
