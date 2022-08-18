@@ -1,7 +1,9 @@
 package listdemos;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class ListDemo {
 /*List: indexed, duplicate allowed, multiple null allowed, ordered: insertion order followed
@@ -53,6 +55,7 @@ public class ListDemo {
 		System.out.println(myList3.size());
 		System.out.println(myList3.contains("Ritesh"));
 		System.out.println(myList3.indexOf("Karuna"));
+		myList3.add(2,"Vina");
 		System.out.println(myList3); 
 		
 		/*Implement Linked List of collection of salaries (Double)*/
@@ -64,12 +67,65 @@ public class ListDemo {
 			System.out.println(name);
 		}
 		// enhanced for
-	for(String name:myList3)
-	{
+	for(String name:myList3){
 		System.out.println(name);
 	}
 		//iterator
-		
-		//listiterator
+		System.out.println("----using Iterator--------");
+		Iterator<Integer> itr=myList2.iterator();
+	     while(itr.hasNext()) {
+	    	 		Integer ele=itr.next();
+	    	 		System.out.println(ele);
+	     }
+	     itr=myList2.iterator();
+	     while(itr.hasNext()) {
+ 	 		Integer ele=itr.next();
+ 	 		System.out.println(ele);
+ 	 		//myList2.remove(5); // do not modify collection via list object in traversing phase
+	     }
+	Iterator<String> itr2=myList3.iterator();    
+	     while(itr2.hasNext()) {
+	    	 String ele=itr2.next();
+	    	 System.out.println(ele);
+	     }
+	     /*Iterator can not be used to come backward*/
+	     /*Iterator can not be access index of traversed element*/
+	     
+	     // remove 123 from list in traversing phase
+	     System.out.println(myList2);
+	     itr=myList2.iterator();     
+	     while(itr.hasNext()) {
+ 	 		Integer ele=itr.next();
+ 	 		if(ele==123)
+ 	 			itr.remove();
+	     }
+	     // display list to test removal
+	     System.out.println(myList2);
+	     for(int i=0;i<myList2.size();i++){
+	    	 int e=myList2.get(i);
+	 		if(e==5555)
+	 			myList2.remove(i);
+	 	}
+	     System.out.println(myList2);
+	    
+		//ListIterator  : sub interface Iterator
+	     /*only works for lists : Vector, Stack, ArrayList, LinkedList*/
+	     /*1. can traverse backward
+	      * 2. we can access index while traversing
+	      * 3. updation : add, set, remove*/
+	     
+	     ListIterator<Integer> listitr=myList2.listIterator();
+	     System.out.println("Forward Traversing");
+	     while(listitr.hasNext()) {
+	    	 int index=listitr.nextIndex();
+	    	 Integer ele=listitr.next();
+	    	 System.out.println(ele+"   =>>  "+index);
+	     }
+	     System.out.println("Backward Traversing");
+	     while(listitr.hasPrevious()) {
+	    	 int index=listitr.previousIndex();
+	    	 Integer ele=listitr.previous();
+	    	 System.out.println(ele+"   =>>  "+index);
+	     }
 	}
 }
