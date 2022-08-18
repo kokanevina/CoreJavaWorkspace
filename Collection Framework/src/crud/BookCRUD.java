@@ -36,12 +36,16 @@ public class BookCRUD{
 		return searchedBook;  // null will returned if no book found
 	}
 	
+	
+	
+	
+	
 	public boolean updateBook(Book updatedbook) {
 		boolean replaced= false;
 		for(int j=0;j<i;j++) {
-			Book bk=bookArray[j];
-			if(bk!=null && bk.getBookId()==updatedbook.getBookId()) {
-				bookArray[j]=updatedbook;
+			Book bk=bookList.get(j);
+			if(bk.getBookId()==updatedbook.getBookId()) {
+				bookList.set(j, updatedbook);
 				replaced=true;
 				break;
 			}
@@ -51,9 +55,9 @@ public class BookCRUD{
 	public boolean deleteBook(int bookId) {
 		boolean deleted=false;
 		for(int j=0;j<i;j++) {
-			Book bk=bookArray[j];
-			if(bk!=null && bk.getBookId()==bookId) {
-				bookArray[j]=null;
+			Book bk=bookList.get(j);
+			if(bk.getBookId()==bookId) {
+				bookList.remove(j);
 				deleted=true;
 			}
 		}// ended
