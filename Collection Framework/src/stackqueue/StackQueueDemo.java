@@ -2,6 +2,7 @@ package stackqueue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -94,5 +95,8 @@ public class StackQueueDemo {
 		 boolean b=myDq.removeFirstOccurrence(33);
 		 System.out.println(b);
 		 System.out.println(myDq);
+	
+		 Iterator<Integer> itr=myDq.iterator();
+		 // while loop
 	}
 }

@@ -106,6 +106,10 @@ public class SetDemo {
 			
             for(Book b:books2)
         	   	System.out.println(b);
-			
+        	Set<String> mySet=Set.of("Hi","hello"); // immutable
+    		//mySet.add("asdd"); // can not add
 		}
+	
+	
+		
 }

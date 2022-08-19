@@ -36,8 +36,17 @@ public class Book  implements Comparable<Book>{
 	public int compareTo(Book book) {
 		// this : book 1, book : book 2
 		System.out.println("function called");
-		int diff=this.bookId-book.bookId;
+		int diff=this.bookId-book.bookId;  // 10, 14, 15  == 0 
 		return diff;
 	}
 	
+	@Override
+	public boolean equals( Object obj) {
+		System.out.println("Called");
+		Book book=(Book)obj;
+		if(this.bookId==book.bookId) 
+			return true;
+		else
+			return false;
+	}
 }

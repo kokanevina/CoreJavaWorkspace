@@ -7,7 +7,7 @@ import crud.Book;
 public class CompareOnId implements Comparator<Book>{
 	@Override
 	public int compare(Book b1, Book b2) {
-		int diff=b1.getBookId()-b2.getBookId();
+		int diff=b1.getBookId()-b2.getBookId();  // 10, 14, 15  == 0
 		return diff;
 	}
 
