@@ -19,7 +19,6 @@ public class MyStack {
 				System.out.println(e);
 			}
 		}
-		
 		public Object pop() {
 			try {
 				if(top==-1)
