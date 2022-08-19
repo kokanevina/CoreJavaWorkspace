@@ -1,6 +1,9 @@
 package parentthread;
 
+import childthreads.ChildThread1;
+
 public class ParentDemo {
+	// execution of main thread starts from main method 
 	public static void main(String[] args) // root thread started from here
 	{
 		MathOperations op=new MathOperations();
@@ -18,6 +21,11 @@ public class ParentDemo {
 		mainthread.setName("root");
 		System.out.println(mainthread.getName());
 		System.out.println(mainthread);
+		// parent created childs, priority and group name is inherited from parent thread
+		ChildThread1 child1=new ChildThread1(); // child thread created
+		child1.start();// thread started, call automatically goes to run
+		// execution of child thread starts from run method
+		System.out.println(child1);
 		try {
 			op.loop(3, 10);
 		} catch (InterruptedException e) {

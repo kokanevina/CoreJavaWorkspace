@@ -1,0 +1,2 @@
+Create Child Thread of Child.
+also call Thread API functions to change name and priority
