@@ -26,6 +26,7 @@ public class ParentDemo {
 		child1.start();// thread started, call automatically goes to run
 		// execution of child thread starts from run method
 		System.out.println(child1);
+		// like wise u can create more childs and start
 		try {
 			op.loop(3, 10);
 		} catch (InterruptedException e) {

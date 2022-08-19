@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
-    <fullyQualifiedTypeName name="wrappers.WrapDemo1"/>
-    <fullyQualifiedTypeName name="java.lang.Boolean"/>
-    <fullyQualifiedTypeName name="wrappers.Student"/>
     <fullyQualifiedTypeName name="api.MyDate"/>
     <fullyQualifiedTypeName name="javax.print.attribute.HashAttributeSet"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="types.StackIntf"/>
     <fullyQualifiedTypeName name="types.QueueIntf"/>
     <fullyQualifiedTypeName name="types.CollectIntf"/>
@@ -39,8 +31,6 @@
     <fullyQualifiedTypeName name="overriddemo.MyList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
@@ -56,8 +46,18 @@
     <fullyQualifiedTypeName name="comparatordemo.CompareOnName"/>
     <fullyQualifiedTypeName name="comparatordemo.CompareOnPrice"/>
     <fullyQualifiedTypeName name="genericdemo.MyStack"/>
-    <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="genericdemo.StackUnderFlowException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="genericdemo.MyGStack"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="genericdemo.MyMap"/>
+    <fullyQualifiedTypeName name="childthreads.Child1"/>
+    <fullyQualifiedTypeName name="childthreads.ChildThread1"/>
+    <fullyQualifiedTypeName name="java.lang.ThreadGroup"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="parentthread.MathOperations"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

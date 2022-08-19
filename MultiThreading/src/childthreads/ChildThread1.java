@@ -13,10 +13,7 @@ public class ChildThread1 extends Thread{
 		child.setName("child-1");
 		child.setPriority(Thread.MIN_PRIORITY);
 		System.out.println(child);
-		/*if child thread want to create its child then put logic of creating , and starting a thread here*/
-		
-		
-		
+		/*if child thread want to create its child then put logic of creating , and starting a thread here*/		
 		MathOperations mop=new MathOperations();
 		try {
 			mop.loop(55,65);
