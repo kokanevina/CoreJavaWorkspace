@@ -22,14 +22,21 @@ public class MyStack {
 		
 		public Object pop() {
 			try {
-			if(top==-1)
-				throw new StackUnderFlowException();
-			 return myArray[top];
+				if(top==-1)
+					throw new StackUnderFlowException();
+				else {
+					Object e=myArray[top];
+					myArray[top]=null;
+					top--;
+					return e;
+				}
 			}
 			catch(StackUnderFlowException e) {
 				System.out.println(e);
-				return top;
+				return null;
 			}
+			
+		
 		}
 		@Override
 		public String toString() {
