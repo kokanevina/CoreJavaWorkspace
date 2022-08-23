@@ -50,15 +50,24 @@ public class BankAccount {
 		return "BankAccount [accountNum=" + accountNum + ", custId=" + custId + ", type=" + type + ", balance="
 				+ balance + "]";
 	}
-	public double deposit(double amount)
+	public   double deposit(double amount) throws InterruptedException
 	{
+		System.out.println(Thread.currentThread().getName()+" entered in deposit");
+		Thread.sleep(1000);
+		System.out.println(amount + " to deposit");
 		balance=balance+amount;
+		System.out.println(Thread.currentThread().getName()+" exited from deposit");
 		return balance;
 	}
 	
-	public double withdraw(double amount)
+	public   double withdraw(double amount) throws InterruptedException
 	{
+		System.out.println(Thread.currentThread().getName()+" entered in withdraw");
+		System.out.println(amount + " to withdraw");
 		balance=balance-amount;
+		Thread.sleep(500);
+		System.out.println(Thread.currentThread().getName()+" exited from withdraw");
 		return balance;
+		
 	}
 }
