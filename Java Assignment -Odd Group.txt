@@ -1,0 +1,12 @@
+Implement Following Problem Statement using Object Array
+
+1. Create LocalTrain class with id, source, destination, type (harbour, central, western), String array of stops
+2. Declare constructors, getter setters, toString and other approproate methods for displaying info of train
+3. Create LocalTrain Array having multiple LocalTrain objects and display
+4. Perform following operations on Student Array
+	a. Search any train by id given by user
+	b. Search trains starting from same source given by user
+	c. Search trains reaching to same destination given by user
+	d. Search trains starting from and reaching to same destination given by user
+	e. Search trains by type
+	f. Search trains which stop at station given by user

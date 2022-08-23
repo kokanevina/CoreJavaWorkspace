@@ -1,7 +1,8 @@
 package childthreads;
 
 import parentthread.MathOperations;
-
+/*if multiple threads wants to do same work then create same class objects and call start on those objects
+ * call will come to same run method*/
 public class ChildThread1 extends Thread{
 
 	public ChildThread1() {

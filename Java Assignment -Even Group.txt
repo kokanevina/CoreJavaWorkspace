@@ -1,0 +1,12 @@
+Implement Following Problem Statement using Object Array
+
+1. Create Student class with id, name, integer array of subjects marks, 
+percentage(to be calculated using marks in array) and grade (to be calculated using percentage range)
+2. Declare constructors, getter setters, toString and other approproate methods for calculting total and
+percentage
+3. Create Student Array having multiple Student objects and display
+4. Perform following operations on Student Array
+	a. Search any student by id given by user
+	b. Search students whose name contains letter/string asked by user
+	c. Search students having percentage given by user
+	d. Search students having grade given by user
