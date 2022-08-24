@@ -4,8 +4,8 @@ public class BankAccount {
 	private long accountNum;
 	private int custId;
 	private String type;
-	private double balance;
-	private boolean flag=false;
+	private volatile double balance; // shared among thread objects
+	private volatile boolean flag=false; // shared among thread objects
 	
 	public BankAccount() {
 			accountNum=1111;
