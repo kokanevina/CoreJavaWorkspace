@@ -10,8 +10,8 @@ public class ProducerConsumerDemo {
 					Runnable r2=new ConsumerThread(fact);
 					
 					/*Thread class object*/
-					Thread  pthread =new Thread(tg, r1);
-					Thread cthread=new Thread(tg, r2);
+					Thread  pthread =new Thread(tg,r1);
+					Thread cthread=new Thread(tg,r2);
 					
 					pthread.setName("Producer");
 					cthread.setName("Consumer");

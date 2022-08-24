@@ -1,6 +1,6 @@
 package producerconsumer;
 
-public class ProducerThread implements Runnable{
+public class ProducerThread   implements Runnable{
 
 	private Factory factory;
 	public ProducerThread(Factory fact) {
