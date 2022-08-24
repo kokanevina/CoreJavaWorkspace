@@ -8,7 +8,7 @@ import java.io.IOException;
 public class ReadDemo1 {
 	public static void main(String[] args) {
 		File file=new File("India.txt");
-		try(FileReader filereader=new FileReader(file)){
+		try(FileReader filereader=new FileReader(file); ){
 			System.out.println("File opened in read mode. File pointer points to 1st character of file");
 			// we can read file here
 			int i=0;
