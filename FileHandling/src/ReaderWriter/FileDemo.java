@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
-public class ReadDemo {
+public class FileDemo {
 		public static void main(String[] args) {
 			
 			//File file =new File("D:\\CoreJavaWorkspace\\FileHandling\\India.txt");
