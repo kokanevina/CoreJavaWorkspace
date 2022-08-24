@@ -18,9 +18,10 @@ public class ReadDemo1 {
 					 if(i==-1)
 						 break;
 					contents=contents+(char)i;
+					// filewriter.write(i) // one by one
 			}
 			System.out.println(contents);
-	
+	      // filewriter.write(contents) // direct string
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

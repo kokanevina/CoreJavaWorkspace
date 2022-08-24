@@ -16,6 +16,7 @@ public class ReadDemo {
 				char arr[]=new char[length];
 				filereader.read(arr);		
 				String contents=new String(arr);
+				//filewriter.write(arr);
 				System.out.println(contents);
 		
 			} catch (FileNotFoundException e) {

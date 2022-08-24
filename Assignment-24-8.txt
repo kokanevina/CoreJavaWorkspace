@@ -1,0 +1,1 @@
+Use PrintWriter to write the contents in file
