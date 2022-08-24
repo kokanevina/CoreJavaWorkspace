@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="api.MyDate"/>
-    <fullyQualifiedTypeName name="javax.print.attribute.HashAttributeSet"/>
-    <fullyQualifiedTypeName name="types.StackIntf"/>
-    <fullyQualifiedTypeName name="types.QueueIntf"/>
     <fullyQualifiedTypeName name="types.CollectIntf"/>
     <fullyQualifiedTypeName name="types.Outer.Inner"/>
     <fullyQualifiedTypeName name="types.Outer"/>
@@ -59,5 +55,9 @@
     <fullyQualifiedTypeName name="java.lang.ThreadGroup"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="parentthread.MathOperations"/>
+    <fullyQualifiedTypeName name="java.nio.channels.AcceptPendingException"/>
+    <fullyQualifiedTypeName name="banking.DepositThread"/>
+    <fullyQualifiedTypeName name="banking.BankAccount"/>
+    <fullyQualifiedTypeName name="banking.WithdrawThread"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>
