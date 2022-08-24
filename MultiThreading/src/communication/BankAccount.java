@@ -55,7 +55,7 @@ public class BankAccount {
 		System.out.println(Thread.currentThread().getName()+" checking flag value "+flag);
 		if(flag==true) {
 			System.out.println("waiting...");
-			wait();
+			wait();  // wait(3000), wait(4000,12);
 			System.out.println("out of waiting...");
 		}
 		System.out.println(Thread.currentThread().getName()+" entered in deposit");
