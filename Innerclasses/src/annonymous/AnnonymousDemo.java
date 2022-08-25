@@ -38,7 +38,6 @@ public class AnnonymousDemo {
 				return mult;
 			}
 		};
-		
 		System.out.println(math.add(12,34,56));
 		System.out.println(math.mult(4,6,2));
 	 
