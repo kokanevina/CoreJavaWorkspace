@@ -8,14 +8,14 @@ import java.util.Scanner;
 
 public class SortDemo {
 public static void main(String[] args) {
-
+Scanner sc=new Scanner(System.in);
 	System.out.println("------------------------------------------");
 	List<Book> bkList2=new LinkedList<>();
 	bkList2.add(new Book(2,"Java",600));
 	bkList2.add(new Book(1,"PHP",300));
 	bkList2.add(new Book(12,"CPP",400));
-	bkList2.add(new Book(10,"Core Java",600));
-	bkList2.add(new Book(13,"Java Basics",700));
+	bkList2.add(new Book(10,"Core java",600));
+	bkList2.add(new Book(13,"JAVA Basics",700));
 	bkList2.add(new Book(15,"Learn Python",650));
 	bkList2.add(new Book(14,"Web Basics",550));
 
@@ -48,8 +48,18 @@ public static void main(String[] args) {
 	 * polymorphism System.out.println("After sorting..."); for(Book bk:bkList2)
 	 * System.out.println(bk); } } while(ch!=4);
 	 */
-	
+	System.out.println("----------------------------------");
+
+	bkList2.stream().filter(book->book.getBookName().toLowerCase().contains("java")).forEach(book->System.out.println(book));
+	System.out.println("Enter id to search a book");
+	int bid=sc.nextInt();
+	bkList2.stream().filter(book->book.getBookId()==bid).forEach(book->System.out.println(book));
+
 	System.out.println("Application ended");
 
+	
+	
+	
+	
 }
 }
