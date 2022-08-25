@@ -23,17 +23,17 @@ public static void main(String[] args) {
 	for(Book bk:bkList2)
 			System.out.println(bk);
 	System.out.println("Sort on Id");
-	Collections.sort(bkList2, (Book b1, Book b2)->b1.getBookId()-b2.getBookId()); 
+	Collections.sort(bkList2, (b1,b2)->b1.getBookId()-b2.getBookId()); 
 	for(Book bk:bkList2)
 		System.out.println(bk);
 	
 	System.out.println("Sort on price");
-	Collections.sort(bkList2,(Book b1, Book b2)->(int)(b1.getBookPrice()-b2.getBookPrice())); 
+	Collections.sort(bkList2,(b1,b2)->(int)(b1.getBookPrice()-b2.getBookPrice())); 
 	for(Book bk:bkList2)
 		System.out.println(bk);
 	
 	System.out.println("Sort on name");
-	Collections.sort(bkList2,(Book b1, Book b2)->b1.getBookName().compareTo(b2.getBookName()));
+	Collections.sort(bkList2,(b1, b2)->b1.getBookName().compareTo(b2.getBookName()));
 	for(Book bk:bkList2)
 		System.out.println(bk);
 	/*
