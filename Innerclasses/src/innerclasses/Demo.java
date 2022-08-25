@@ -35,8 +35,7 @@ public static void main(String[] args) {
 				}
 
 		}
-		
-		
+			
 		Runnable r=new MethodLocal();
 		Thread thread=new Thread(r);
 		thread.start();
