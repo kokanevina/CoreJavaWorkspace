@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="types.CollectIntf"/>
-    <fullyQualifiedTypeName name="types.Outer.Inner"/>
-    <fullyQualifiedTypeName name="types.Outer"/>
-    <fullyQualifiedTypeName name="types.Outer1"/>
-    <fullyQualifiedTypeName name="types.Outer1.Inner1"/>
-    <fullyQualifiedTypeName name="java.util.ListIterator"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="varargs.Demo"/>
-    <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
-    <fullyQualifiedTypeName name="java.lang.Iterable"/>
     <fullyQualifiedTypeName name="java.awt.print.Book"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="stackqueue.StackQueueDemo"/>
@@ -44,7 +30,6 @@
     <fullyQualifiedTypeName name="genericdemo.MyStack"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="genericdemo.StackUnderFlowException"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="genericdemo.MyGStack"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
@@ -52,12 +37,27 @@
     <fullyQualifiedTypeName name="genericdemo.MyMap"/>
     <fullyQualifiedTypeName name="childthreads.Child1"/>
     <fullyQualifiedTypeName name="childthreads.ChildThread1"/>
-    <fullyQualifiedTypeName name="java.lang.ThreadGroup"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="parentthread.MathOperations"/>
     <fullyQualifiedTypeName name="java.nio.channels.AcceptPendingException"/>
     <fullyQualifiedTypeName name="banking.DepositThread"/>
     <fullyQualifiedTypeName name="banking.BankAccount"/>
     <fullyQualifiedTypeName name="banking.WithdrawThread"/>
+    <fullyQualifiedTypeName name="producerconsumer.Factory"/>
+    <fullyQualifiedTypeName name="producerconsumer.ProducerThread"/>
+    <fullyQualifiedTypeName name="producerconsumer.ConsumerThread"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.lang.ThreadGroup"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.calc.IntegerConvertNode"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.RandomAccessFile"/>
 </qualifiedTypeNameHistroy>
