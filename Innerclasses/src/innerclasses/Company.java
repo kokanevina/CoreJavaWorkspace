@@ -132,4 +132,26 @@ public class Company {
 		}
 		
 		
+		public void test() {
+			 int m=45;
+			 /*any local class can not be private, default, protected, public*/
+			 /*bydefault : local scope*/
+			class Local{
+				int l;
+				
+				public void  localMethod() {
+					System.out.println(m);
+				}
+			}
+			
+			Local local=new Local();
+			local.l=78;
+			System.out.println(local.l);
+			local.localMethod();
+			
+		}// method ended
+		
+		
+		
+		
 }// outer classes ended 
