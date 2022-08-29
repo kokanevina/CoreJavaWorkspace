@@ -1,4 +1,4 @@
-Implement UDP client server programming in Java
+Implement UDP client-server programming in Java
 
 DatagramSocket
 DatagramPacket
