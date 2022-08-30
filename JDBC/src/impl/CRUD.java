@@ -9,6 +9,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import connection.MyConnection;
 import pojo.Employee;
@@ -115,12 +117,36 @@ public class CRUD {
 		System.out.println("Connection Autoclosed");
 	}
 	
-	public void selectAll() {
+	public Employee search(int empId) {
+		Employee emp=null;
+		String sql="select * from employee where emp_id=?";
+		 try (Connection connection=MyConnection.connect()){	  
+				PreparedStatement pstatement=connection.prepareStatement(sql);
+				pstatement.setInt(1, empId);
+				System.out.println(pstatement);
+				ResultSet rset= pstatement.executeQuery();
+				while(rset.next()) {
+					int id=rset.getInt("emp_id");
+					String name=rset.getString("emp_name");
+					double salary=rset.getDouble("emp_salary");
+					 emp=new Employee(id,name,salary);
+				}
+				
+			} 
+			  catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			System.out.println("Connection Autoclosed");
+			return emp;
+	}
+	
+	public List<Employee> selectAll() {
 	   String sql="select * from employee";
-	   
+	   List<Employee> empList=new ArrayList<>();
 	   try (Connection connection=MyConnection.connect()){	  
 			PreparedStatement pstatement=connection.prepareStatement(sql); // Statement
-	       // no logic for ?
 			ResultSet rset= pstatement.executeQuery();
 			System.out.println(rset.getClass());
 			// selected data is available in rset
@@ -128,7 +154,8 @@ public class CRUD {
 					int id=rset.getInt("emp_id");
 					String name=rset.getString("emp_name");
 					double salary=rset.getDouble("emp_salary");
-					System.out.println(id+" "+name+" "+salary);
+					Employee emp=new Employee(id,name,salary);
+					empList.add(emp);
 				}
 		} 
 		  catch (ClassNotFoundException e) {
@@ -137,6 +164,7 @@ public class CRUD {
 			e.printStackTrace();
 		}
 		System.out.println("Connection Autoclosed");
+		return empList;
 	} // method ended
 		
 	
