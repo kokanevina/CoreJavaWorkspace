@@ -28,13 +28,17 @@ public class CRUDDemo {
 				double salary=Double.parseDouble(br.readLine());		
 				Employee emp=new Employee(id,name,salary);
 				// emp : Data carrier (pojo)		
-				crud.insert(emp);
+				boolean b=crud.addEmployee(emp);
+				if(b)
+					System.out.println("Employee added.....");
+				else
+					System.out.println("Failed......");
 				break;
 			case 2:
 				System.out.println("Update  Employee details:");
 				System.out.println("Enter existing id to update details");
 				 id=Integer.parseInt(br.readLine());			
-				 Employee searchedEmp=crud.search(id);
+				 Employee searchedEmp=crud.getEmployeeById(id);
 				 System.out.println("Searched :"+searchedEmp);
 				 System.out.println("What u want to update");
 				 System.out.println("1:name 2: salary 3: both 4: back");
@@ -64,24 +68,34 @@ public class CRUDDemo {
 					break;
 				}
 				if(choice==1 || choice==2 || choice==3)
-					crud.update(searchedEmp);
+				{
+					b=crud.updateEmployee(searchedEmp);
+					if(b)
+						System.out.println("Employee updated........");
+					else
+						System.out.println("Failed............");
+				}
 				break;
 			case 3:
 				System.out.println("Enter existing id to delete employee");
 				 id=Integer.parseInt(br.readLine());
-				 crud.delete(id);
+				 b= crud.deleteEmployee(id);
+				 if(b)
+						System.out.println("Employee deleted........");
+					else
+						System.out.println("Failed............");
 				 break;
 			case 4:
 				System.out.println("Enter existing id to search employee");
 				 id=Integer.parseInt(br.readLine());
-				 searchedEmp= crud.search(id);
+				 searchedEmp= crud.getEmployeeById(id);
 				if(searchedEmp!=null)
 						System.out.println(searchedEmp);
 				else
 					System.out.println("Employee not found");
 				break;
 			case 5:
-				List<Employee> eList=crud.selectAll();
+				List<Employee> eList=crud.getAllEmployees();
 				//method reference
 				System.out.println(eList.size());
 				if(eList.isEmpty())
