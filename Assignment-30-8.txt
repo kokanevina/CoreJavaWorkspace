@@ -1,0 +1,6 @@
+Implement CRUD operations on account : 
+account number int primary key, customer id int,  type varchar, balance double
+
+deposit, withdraw and money transfer from one account to another account
+
+pojo, dao, impl, test CRUDDEMO, TransactionDemo
