@@ -22,7 +22,6 @@ public class BatchUpdateDemo {
 			int no[]=stmt.executeBatch(); /*it will not work for select queries*/
 			for(int i=0;i<no.length;i++)
 				System.out.println(no[i]);
-		
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
