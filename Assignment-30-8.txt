@@ -1,5 +1,5 @@
-Implement CRUD operations on account : 
-account number int primary key, customer id int,  type varchar, balance double
+Implement CRUD (insert,update, delete, search , get all) operations on account : 
+account number int primary key, customer id int,  type varchar(50), balance double
 
 deposit, withdraw and money transfer from one account to another account
 
