@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -76,5 +77,67 @@ public class CRUD {
 		 */
 	}
 	
+	public void update(Employee em) {
+		String sql="update employee set emp_name=?,emp_salary=? where emp_id=?"; 
+		try (Connection connection=MyConnection.connect()){	  
+			PreparedStatement pstatement=connection.prepareStatement(sql);
+			pstatement.setInt(3, em.getEmpId());
+			pstatement.setString(1, em.getEmpName());
+			pstatement.setDouble(2, em.getEmpSalary());
+			System.out.println(pstatement);
+			int no=pstatement.executeUpdate(); 
+			System.out.println("Number of rows affected: "+no);
+		} 
+		  catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Connection Autoclosed");
+		/*
+		 * String sql3="delete from employee where emp_id=?";
+		 */
+	}
+	public void delete(int empId) {
+		String sql="delete from employee where emp_id=?"; 
+		try (Connection connection=MyConnection.connect()){	  
+			PreparedStatement pstatement=connection.prepareStatement(sql);
+			pstatement.setInt(1, empId);
+			System.out.println(pstatement);
+			int no=pstatement.executeUpdate(); 
+			System.out.println("Number of rows affected: "+no);
+		} 
+		  catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Connection Autoclosed");
+	}
+	
+	public void selectAll() {
+	   String sql="select * from employee";
+	   
+	   try (Connection connection=MyConnection.connect()){	  
+			PreparedStatement pstatement=connection.prepareStatement(sql); // Statement
+	       // no logic for ?
+			ResultSet rset= pstatement.executeQuery();
+			System.out.println(rset.getClass());
+			// selected data is available in rset
+				while(rset.next()) {
+					int id=rset.getInt("emp_id");
+					String name=rset.getString("emp_name");
+					double salary=rset.getDouble("emp_salary");
+					System.out.println(id+" "+name+" "+salary);
+				}
+		} 
+		  catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Connection Autoclosed");
+	} // method ended
+		
 	
 }
